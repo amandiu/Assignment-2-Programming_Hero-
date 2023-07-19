@@ -1,0 +1,163 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+nav > div > h1 > span {
+  color: #ff42a5;
+}
+nav > div > h1 {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+}
+nav > div > img {
+  height: 25px;
+  width: 50px;
+  margin-right: 10px;
+}
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+nav > ul li a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: #3c354f;
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-Decoration {
+  display: flex;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 0px 15px;
+  align-items: center;
+}
+.nav-Decoration > img {
+  margin: 10px;
+}
+
+/* Nav Section End */
+
+/* Banner Section Start */
+
+.banner-section {
+  display: flex;
+  background: #fff;
+}
+.banner-section1 {
+  flex: 1;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  background-image: url("../images/Group\ 14.png");
+  background-size: 100%;
+  background-position-y:50%;
+  background-repeat: no-repeat;
+  padding: 0px 50px 100px 1px;
+  justify-content: center;
+  align-items: center;
+}
+.banner-section1 h3 {
+  color: #0b0223;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20%;
+}
+.banner-section1 h1 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-section1 > div > div img {
+  margin-right: 10px;
+}
+.banner-section1 > div > div {
+  background-color: #8758f1;
+  margin-left: 10%;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.banner-section1Button {
+  display: flex;
+}
+.banner-section1Button button {
+  border-radius: 48px;
+  border: none;
+  margin-left: 10px;
+  margin-top: 50px;
+  width: 160px;
+  padding: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner-section2 {
+  flex: 1;
+  padding: 20px 100px;
+  margin-bottom: -150px;
+  background-image: url("../images/Group 18.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+/* media Section Start */
+@media screen and (max-width: 480px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+  nav > div {
+    margin-left: 25%;
+    margin-bottom: 5%;
+  }
+  nav > ul {
+    display: block;
+    padding: 0px 100px;
+  }
+  nav > ul > li {
+    margin-bottom: 5%;
+  }
+  .nav-Decoration {
+    justify-content: center;
+    padding: 2px 0px;
+  }
+  .banner-section {
+    margin-top: 10px;
+    display: block;
+  }
+  .banner-section2 {
+    height: 280px;
+    margin: 5%;
+    /* How to show Background image in media Screen */
+  }
+}
